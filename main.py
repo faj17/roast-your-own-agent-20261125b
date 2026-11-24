@@ -6,7 +6,7 @@ PAYOFF = "ranked its failures by severity, and asked me to approve the ranking."
 
 
 def assemble_text():
-    return f"{SETUP}{ACTION}{PAYOFF}"
+    return "".join([SETUP, ACTION, PAYOFF])
 
 
 os.makedirs("/output", exist_ok=True)
